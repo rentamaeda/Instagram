@@ -134,6 +134,7 @@ PODS:
   - SDWebImage (5.8.4):
     - SDWebImage/Core (= 5.8.4)
   - SDWebImage/Core (5.8.4)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Firebase (= 6.11.0)
@@ -142,6 +143,7 @@ DEPENDENCIES:
   - Firebase/Firestore
   - Firebase/Storage
   - FirebaseUI/Storage
+  - SVProgressHUD (= 2.2.5)
 
 SPEC REPOS:
   trunk:
@@ -169,6 +171,7 @@ SPEC REPOS:
     - PromisesObjC
     - Protobuf
     - SDWebImage
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
@@ -195,7 +198,8 @@ SPEC CHECKSUMS:
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   Protobuf: 2793fcd0622a00b546c60e7cbbcc493e043e9bb9
   SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 2e23f1bd98e3cb7400a4d0ca8ec169cd7bf366da
+PODFILE CHECKSUM: b612cf2c6e25a40f92c0b200cca0d822135a06db
 
 COCOAPODS: 1.9.3
