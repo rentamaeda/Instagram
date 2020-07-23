@@ -21,6 +21,9 @@
 		37A29EE224C9A366007DD328 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A29EE124C9A366007DD328 /* TabBarController.swift */; };
 		37A29EE424C9CD97007DD328 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37A29EE324C9CD97007DD328 /* GoogleService-Info.plist */; };
 		37B8AD5B24C9E1A50011B11F /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8AD5A24C9E1A50011B11F /* Const.swift */; };
+		37B8AD5F24C9E2A50011B11F /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8AD5E24C9E2A50011B11F /* PostData.swift */; };
+		37B8AD6224C9E2F50011B11F /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8AD6024C9E2F50011B11F /* PostTableViewCell.swift */; };
+		37B8AD6324C9E2F50011B11F /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B8AD6124C9E2F50011B11F /* PostTableViewCell.xib */; };
 		9EA09158F648301A44A90B29 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F9C8FF4E1DA89BAB68BAE6 /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,9 @@
 		37A29EE124C9A366007DD328 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		37A29EE324C9CD97007DD328 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		37B8AD5A24C9E1A50011B11F /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		37B8AD5E24C9E2A50011B11F /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		37B8AD6024C9E2F50011B11F /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		37B8AD6124C9E2F50011B11F /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		55F9C8FF4E1DA89BAB68BAE6 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3A87C642DA1F5D2D657FE4 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		E865CC6B45AB8EE505A9D534 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,9 +93,12 @@
 				37A29ED524C99C7C007DD328 /* LoginViewController.swift */,
 				37A29EC124C99BC5007DD328 /* AppDelegate.swift */,
 				37B8AD5A24C9E1A50011B11F /* Const.swift */,
+				37B8AD5E24C9E2A50011B11F /* PostData.swift */,
 				37A29EC324C99BC5007DD328 /* SceneDelegate.swift */,
 				37A29EC524C99BC5007DD328 /* ViewController.swift */,
 				37A29EC724C99BC5007DD328 /* Main.storyboard */,
+				37B8AD6024C9E2F50011B11F /* PostTableViewCell.swift */,
+				37B8AD6124C9E2F50011B11F /* PostTableViewCell.xib */,
 				37A29ECA24C99BC7007DD328 /* Assets.xcassets */,
 				37A29ECC24C99BC7007DD328 /* LaunchScreen.storyboard */,
 				37A29ECF24C99BC7007DD328 /* Info.plist */,
@@ -176,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37A29EE424C9CD97007DD328 /* GoogleService-Info.plist in Resources */,
+				37B8AD6324C9E2F50011B11F /* PostTableViewCell.xib in Resources */,
 				37A29ECE24C99BC7007DD328 /* LaunchScreen.storyboard in Resources */,
 				37A29ECB24C99BC7007DD328 /* Assets.xcassets in Resources */,
 				37A29EC924C99BC5007DD328 /* Main.storyboard in Resources */,
@@ -240,7 +250,9 @@
 				37A29EC624C99BC5007DD328 /* ViewController.swift in Sources */,
 				37A29EC224C99BC5007DD328 /* AppDelegate.swift in Sources */,
 				37A29EC424C99BC5007DD328 /* SceneDelegate.swift in Sources */,
+				37B8AD5F24C9E2A50011B11F /* PostData.swift in Sources */,
 				37B8AD5B24C9E1A50011B11F /* Const.swift in Sources */,
+				37B8AD6224C9E2F50011B11F /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
