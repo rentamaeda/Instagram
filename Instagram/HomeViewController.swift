@@ -107,7 +107,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
      }
      @objc func handleButton2(_ sender: UIButton, forEvent event: UIEvent) {
         print("コメントボタンがタップされた")
-        let nextvc = LoginViewController()
-        self.present(nextvc, animated: true, completion: nil)
-    }
+       let storyboard: UIStoryboard = self.storyboard!
+       let nextView = storyboard.instantiateViewController(withIdentifier: "comment")
+       present(nextView, animated: true, completion: nil)    }
 }
