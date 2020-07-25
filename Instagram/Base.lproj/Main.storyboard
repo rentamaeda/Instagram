@@ -235,50 +235,90 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiF-qb-ycV">
-                                <rect key="frame" x="57" y="346" width="300" height="40"/>
+                                <rect key="frame" x="57" y="349" width="300" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="UAP-nA-9ls"/>
                                 </constraints>
                                 <state key="normal" title="投稿" backgroundImage="btn">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="postView:" destination="8Mh-7s-DYE" eventType="touchUpInside" id="g6a-op-dFX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uL4-cy-zKY">
+                                <rect key="frame" x="57" y="409" width="300" height="40"/>
+                                <state key="normal" title="キャンセル" backgroundImage="btn">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="chanselView:" destination="8Mh-7s-DYE" eventType="touchUpInside" id="rWn-na-HdZ"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2vj-oE-QPJ">
-                                <rect key="frame" x="87" y="121" width="240" height="128"/>
+                                <rect key="frame" x="87" y="124" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="U19-g0-kZ5"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uL4-cy-zKY">
-                                <rect key="frame" x="57" y="428" width="300" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="投稿" backgroundImage="btn">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejP-kD-AEU">
+                                <rect key="frame" x="57" y="58" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Csf-mq-NiD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コメントを入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pQ-nj-r09">
+                                <rect key="frame" x="57" y="100" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="2vj-oE-QPJ" firstAttribute="top" secondItem="dmb-30-aWF" secondAttribute="top" constant="77" id="BH4-dy-W1g"/>
+                            <constraint firstItem="2vj-oE-QPJ" firstAttribute="top" secondItem="dmb-30-aWF" secondAttribute="top" constant="80" id="0Ch-Hv-68n"/>
+                            <constraint firstItem="2vj-oE-QPJ" firstAttribute="top" secondItem="dmb-30-aWF" secondAttribute="top" constant="80" id="3o0-i0-cO4"/>
+                            <constraint firstItem="ejP-kD-AEU" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="7Hu-eJ-cDI"/>
+                            <constraint firstItem="uL4-cy-zKY" firstAttribute="top" secondItem="hiF-qb-ycV" secondAttribute="bottom" constant="20" id="7y3-me-7xP"/>
+                            <constraint firstItem="2vj-oE-QPJ" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="BeW-Kv-ytu"/>
                             <constraint firstItem="2vj-oE-QPJ" firstAttribute="leading" secondItem="dmb-30-aWF" secondAttribute="leading" constant="87" id="Eqb-pi-chY"/>
                             <constraint firstItem="hiF-qb-ycV" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="Fhb-kc-nHj"/>
                             <constraint firstItem="2vj-oE-QPJ" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="GuD-pF-qtn"/>
+                            <constraint firstItem="2vj-oE-QPJ" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="PyB-3L-uuz"/>
+                            <constraint firstItem="dmb-30-aWF" firstAttribute="trailing" secondItem="6pQ-nj-r09" secondAttribute="trailing" constant="57" id="YDE-Kx-qws"/>
+                            <constraint firstItem="uL4-cy-zKY" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="YL3-Az-M6f"/>
+                            <constraint firstItem="hiF-qb-ycV" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="cRH-mY-oiy"/>
+                            <constraint firstItem="2vj-oE-QPJ" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="dFq-5C-FiN"/>
                             <constraint firstItem="hiF-qb-ycV" firstAttribute="top" secondItem="2vj-oE-QPJ" secondAttribute="bottom" constant="97" id="fHj-xM-V0o"/>
+                            <constraint firstItem="hiF-qb-ycV" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="gEC-dX-8gS"/>
+                            <constraint firstItem="ejP-kD-AEU" firstAttribute="top" secondItem="dmb-30-aWF" secondAttribute="top" constant="14" id="hHQ-fX-m5B"/>
+                            <constraint firstItem="6pQ-nj-r09" firstAttribute="leading" secondItem="dmb-30-aWF" secondAttribute="leading" constant="57" id="iyb-gn-dua"/>
+                            <constraint firstItem="ejP-kD-AEU" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="keS-MN-B2l"/>
                             <constraint firstItem="hiF-qb-ycV" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="pT6-WM-Hmz"/>
+                            <constraint firstItem="uL4-cy-zKY" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="un5-UN-eiZ"/>
+                            <constraint firstItem="6pQ-nj-r09" firstAttribute="top" secondItem="ejP-kD-AEU" secondAttribute="bottom" constant="8" id="wBc-1p-QMX"/>
                             <constraint firstItem="2vj-oE-QPJ" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="we6-Qm-56I"/>
+                            <constraint firstItem="uL4-cy-zKY" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="ykR-Ki-LV3"/>
                             <constraint firstItem="hiF-qb-ycV" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="z2C-ek-DBi"/>
+                            <constraint firstItem="hiF-qb-ycV" firstAttribute="centerX" secondItem="9Gc-W8-2nX" secondAttribute="centerX" id="z2d-QL-DY0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dmb-30-aWF"/>
                     </view>
+                    <connections>
+                        <outlet property="commentView" destination="2vj-oE-QPJ" id="Wbr-pJ-9bW"/>
+                        <outlet property="gorstText" destination="6pQ-nj-r09" id="JCo-Ux-T9r"/>
+                        <outlet property="nameView" destination="ejP-kD-AEU" id="zXD-bN-D8v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tT-vR-VD1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-743" y="477"/>
+            <point key="canvasLocation" x="-743.47826086956525" y="476.78571428571428"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="UJM-mJ-bNE">

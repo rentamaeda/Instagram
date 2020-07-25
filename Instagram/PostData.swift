@@ -8,12 +8,14 @@ class PostData: NSObject {
     var date: Date?
     var likes: [String] = []
     var isLiked: Bool = false
-    var comment: [String] = []
+    var comment: String?
+    var commentname: String?
     var iscomment: Bool = false
     init(document: QueryDocumentSnapshot) {
         self.id = document.documentID
 
         let postDic = document.data()
+        let textdata = document.data()
 
         self.name = postDic["name"] as? String
 
@@ -32,15 +34,9 @@ class PostData: NSObject {
                 self.isLiked = true
             }
         }
-        if let comment = postDic["comment"] as? [String] {
-            self.comment = comment
-        }
-        if let commentid = Auth.auth().currentUser?.uid {
-            // likesの配列の中にmyidが含まれているかチェックすることで、自分がいいねを押しているかを判断
-            if self.comment.firstIndex(of: commentid) != nil {
-                // myidがあれば、いいねを押していると認識する。
-                self.iscomment = true
-            }
-        }
+        self.commentname = textdata["name"] as? String
+        self.comment = textdata["caption"] as? String
+
+      
     }
 }
