@@ -73,6 +73,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
                  // セル内のボタンのアクションをソースコードで設定する
                  cell.likeButton.addTarget(self, action:#selector(handleButton(_:forEvent:)), for: .touchUpInside)
+                cell.commentButton.addTarget(self, action:#selector(handleButton2(_:forEvent:)), for: .touchUpInside)
 
                  return cell
       }
@@ -104,4 +105,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
              postRef.updateData(["likes": updateValue])
          }
      }
+     @objc func handleButton2(_ sender: UIButton, forEvent event: UIEvent) {
+        print("コメントボタンがタップされた")
+        let nextvc = LoginViewController()
+        self.present(nextvc, animated: true, completion: nil)
+    }
 }

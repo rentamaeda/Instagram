@@ -226,6 +226,21 @@
             </objects>
             <point key="canvasLocation" x="1025" y="805"/>
         </scene>
+        <!--Comment View Controller-->
+        <scene sceneID="Pmm-XA-zme">
+            <objects>
+                <viewController id="8Mh-7s-DYE" customClass="commentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Gc-W8-2nX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dmb-30-aWF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tT-vR-VD1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-743" y="477"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="UJM-mJ-bNE">
             <objects>
