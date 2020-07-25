@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameView: UITextField!
     @IBAction func postView(_ sender: Any) {
         // 画像と投稿データの保存場所を定義する
-             let postdataRef = Firestore.firestore().collection(Const.PostdataPath).document()
+             let postdataRef = Firestore.firestore().collection(Const.PostPath).document()
         // FireStoreに投稿データを保存する
         let name = self.nameView.text!
                        let textdata = [
